@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="/conversor de moedas/styles.css">
+</head>
+<body>
+    <div class="colorWallpaper">
+        
+        <header class="title">
+            <h1>Bem-vindo ao Conversor de Moedas!</h1>
+        </header>
+            
+        <section class="login">
+            <h3>Para começar, me diga o seu nome:</h3>
+
+            <form method="get">
+                <input type="text" minlength="4" id="nome" autocomplete="off" >
+                <input type="submit" value="Enviar" id="submit" disabled>
+            </form>
+                
+        </section>
+
+        <section class="conversor">
+
+            <div id="nome-user"></div>
+
+            <form class="form-convertor">
+
+                <div id="sua-moeda">
+                    <label for="sua-moeda">
+                        Primeiro selecione a <strong>sua moeda</strong>:
+                    </label>
+                    <select name="sua-moeda" id="sua-moeda">
+                        <option value="">Selecione uma moeda</option>
+                        <option value="real">Real <strong>(R$)</strong></option>
+                        <option value="euro">Euro (EUR)</option>
+                        <option value="dolar">Dolar (U$)</option>
+                        <option value="peso-argentino">Peso Argentino (AR$)</option>
+                        <option value="peso-mexicano">Peso Mexicano (MXN)</option>
+                        <option value="peso-uruguaio">Peso Uruguaio (UYU)</option>
+                    </select>
+
+                </div>
+
+                <div id="moeda-desejo">
+
+                    <label for="moeda-desejo">
+                        Agora a moeda que <strong>voce deseja</strong>:
+                    </label>
+                    <select name="moeda-desejo" id="moeda-desejo">
+                        <option value="">Selecione uma moeda</option>
+                        <option value="real">Real (R$)</option>
+                        <option value="euro">Euro (EUR)</option>
+                        <option value="dolar">Dolar (U$)</option>
+                        <option value="peso-argentino">Peso Argentino (AR$)</option>
+                        <option value="peso-mexicano">Peso Mexicano (MXN)</option>
+                        <option value="peso-uruguaio">Peso Uruguaio (UYU)</option>
+                    </select>
+
+                </div>
+
+                <button type="submit" id="submit" class="submit-convertor" disabled>Enviar</button>
+    
+            </form>
+
+            <div class="calculo"></div>
+        </section>
+    </div>
+    
+    
+    <script src="/conversor de moedas/main.js"></script>
+</body>
+</html>

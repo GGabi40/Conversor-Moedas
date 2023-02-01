@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(assets/wallpaper.jpg);
+}
+
+.colorWallpaper {
+    background: radial-gradient(rgba(0, 0, 0, 0.637), rgba(53, 52, 52, 0.397));
+    background-size: 100% 100%
+}
+
+.title {
+    background-color: rgba(255, 255, 255, 0.678);
+    width: auto;
+    text-align: center;
+    padding: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+
+.login {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    background: white;
+    border-radius: 20px;
+
+    margin: 50px 20%;
+    padding: 20px;
+}
+
+.login h3 {
+    padding: 5px;
+}
+
+.login #nome {
+    display: block;
+    border: none;
+    border-bottom: 2px solid rgb(141, 150, 21);
+    background-color: transparent;
+
+    margin: 25px auto;
+    padding: 8px 10px;
+    width: 80%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#nome:focus {
+    border: none;
+    background-color: rgba(220, 220, 220, 0.247);
+}
+
+#submit {
+    display: block;
+
+    margin: 10px auto;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: 1s;
+}
+
+#submit:enabled #submit:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgb(141, 150, 21) 3px 3px 4px rgb(141, 150, 21) 3px 3px 4px rgb(141, 150, 21) 3px 3px 4px rgb(141, 150, 21);
+}
+
+#submit:disabled {
+    background-color: gray;
+    color: rgb(31, 31, 31);
+    border: none;
+}
+
+.conversor {
+    /* visibility: hidden; */
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+    margin: 10px 20%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.conversor .form-convertor, #nome-user {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    text-align: center;
+    font-family: tahoma, sans-serif;
+}
+
+#nome-user {
+    margin-bottom: 15px;
+}
+
+select {
+    width: 250px;
+    margin-top: 10px;
+    border: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+
+    font-size: 14px;
+}
+
+select:focus {
+    background-color: rgb(238, 238, 238);
+}
+
+.form-convertor #submit:hover {
+    cursor: pointer;
+}
